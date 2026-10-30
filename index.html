@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>철벽도 연애가 되나요? — 유혹 거절 대작전!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game" class="game-shell">
+  <div class="sparkle s1">✦</div><div class="sparkle s2">♡</div><div class="sparkle s3">✧</div>
+  <header class="topbar">
+    <div class="brand">♡ 철벽도 연애가 되나요? <span>유혹 거절 대작전!</span></div>
+    <div class="top-actions">
+      <button id="statusBtn" class="mini">관계 기록</button>
+      <button id="logBtn" class="mini">대사 로그</button>
+      <button id="settingsBtn" class="mini">설정</button>
+    </div>
+  </header>
+  <main class="stage" id="stage">
+    <div class="scene-label" id="sceneLabel">PROLOGUE · 봄날의 학생회</div>
+    <div class="background" id="background"></div>
+    <div class="scene-glow"></div>
+    <div id="sprite" class="sprite hidden-sprite" aria-label="류권우 일러스트">
+      <img id="characterImage" class="character-image" src="assets/character/calm.png" alt="류권우 표정 일러스트">
+      <div id="spriteCaption" class="sprite-caption">류권우 선배</div>
+    </div>
+    <div id="itemArt" class="item-art hidden"><img src="assets/items/harmful_drink_candy.png" alt="유해약물로 위장한 음료와 캔디"></div>
+    <div id="titleScreen" class="title-screen">
+      <div class="title-card">
+        <div class="title-kicker">♡ A PINK SCHOOL ROMANCE ♡</div>
+        <img class="title-logo" src="assets/ui/title_logo.png" alt="철벽도 연애가 되나요? 유혹 거절 대작전! 로고">
+        <h1 class="sr-only">철벽도 연애가 되나요? 유혹 거절 대작전!</h1>
+        <div class="title-ornament">୨୧ ───── ✦ ───── ୨୧</div>
+        <p class="title-desc">두근거리는 첫사랑, 그리고 꼭 지켜야 할 나의 마음.</p>
+        <button id="startBtn" class="primary">처음부터 시작하기 <span>♡</span></button>
+        <button id="continueBtn" class="secondary">이어하기</button>
+        <div class="title-note">원작 스토리라인 기반 · 선택형 비주얼 노벨</div>
+      </div>
+    </div>
+    <section id="dialogue" class="dialogue hidden">
+      <div class="nameplate" id="speaker">나</div>
+      <div id="dialogueText" class="dialogue-text"></div>
+      <div class="dialogue-bottom"><span id="progress">PROLOGUE · 1</span><span>클릭 또는 Enter로 진행 ▷</span></div>
+    </section>
+    <div id="choices" class="choices hidden"></div>
+    <div id="endingScreen" class="ending-screen hidden">
+      <div class="ending-card"><div id="endingIcon" class="ending-icon">♡</div><div id="endingType" class="ending-type">TRUE ENDING</div><h2 id="endingTitle">진짜 연애는 철벽 뒤에</h2><p id="endingText"></p><button id="restartBtn" class="primary">다시 플레이하기 ♡</button><button id="titleBtn" class="secondary">타이틀로</button></div>
+    </div>
+    <div id="modal" class="modal hidden"><div class="modal-card"><button id="closeModal" class="close">×</button><h3 id="modalTitle">설정</h3><div id="modalBody"></div></div></div>
+    <div class="bottom-hint">✦ 당신의 선택은 이야기를 바꿉니다 ✦</div>
+  </main>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
